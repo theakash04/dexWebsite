@@ -1,0 +1,336 @@
+.sidebar-section {
+  position: relative;
+  background-color: var(--background);
+  width: 100%;
+  color: var(--text2);
+  flex-direction: column;
+  display: flex;
+  padding: 10px 10px;
+}
+.topbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar .profile img {
+  width: 50px;
+  border-radius: 5px;
+}
+.text {
+  display: none;
+}
+.right {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.right .themeChanger {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+/* hover effect on btns on topbar */
+.right .themeChanger:hover,
+.right .menu:hover {
+  background-color: var(--btn-hover);
+}
+.right .themeChanger i {
+  color: var(--text1);
+  font-size: 24px;
+}
+.right .menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.right .menu i {
+  font-size: 30px;
+  color: var(--text3);
+}
+
+.link-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.link-section .pages-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 15px;
+}
+.pages-links .page1 {
+  display: flex;
+  width: 100%;
+}
+.page1 span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: var(--text3);
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.page1 span:hover {
+  background-color: var(--btn-hover);
+  color: var(--text1);
+}
+.page1 span i {
+  font-size: 24px;
+}
+.page1 p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.link-section {
+  display: none;
+}
+
+.link-section .social-links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--text3);
+  cursor: pointer;
+  text-decoration: none;
+}
+.social-links a:hover {
+  background-color: var(--btn-hover);
+  color: var(--text2);
+}
+.social-links a i {
+  font-size: 24px;
+}
+
+
+
+
+
+/* style from 400px viewport */
+@media (min-width: 400px) {
+  .sidebar-section {
+    padding: 20px 10px;
+  }
+  .profile {
+    display: flex;
+  }
+  .profile .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+  }
+  .profile .text span {
+    font-size: 0.9rem;
+    color: var(--text1);
+    font-weight: 600;
+  }
+  .profile .text p {
+    font-size: 0.9rem;
+    color: var(--text2);
+    font-weight: 500;
+  }
+}
+
+/* style from 1000px viewport */
+@media (min-width: 830px) {
+  .sidebar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .topbar .profile img {
+    width: 55px;
+  }
+  .profile .text {
+    display: none;
+  }
+  .right .menu {
+    display: none;
+  }
+  .right {
+    padding-top: 25px;
+  }
+  .right .themeChanger {
+    margin: auto;
+  }
+  .link-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .link-section .pages-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .pages-links .page1 {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  .page1 span {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  .pages-links .page1 span:hover {
+    background-color: var(--btn-hover);
+    color: var(--text1);
+  }
+
+  .pages-links .page1 span i {
+    font-size: 24px;
+  }
+  .pages-links .page1 span p {
+    display: none;
+  }
+  .link-section .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid;
+    padding: 20px 0;
+    row-gap: 15px;
+    width: 100%;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: var(--text3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  .social-links a:hover {
+    background-color: var(--btn-hover);
+    color: var(--text2);
+  }
+  .social-links a i {
+    font-size: 24px;
+  }
+}
+
+/* style for viewport of 1200px */
+@media (min-width: 1440px) {
+  .sidebar-section {
+    width: 290px;
+  }
+  .profile {
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .profile .text {
+    display: flex;
+    padding: 0;
+  }
+  .profile .text span {
+    font-size: 0.9rem;
+  }
+  .profile .text p {
+    font-size: 1rem;
+  }
+  .link-section .pages-links .page1 span p {
+    display: flex;
+  }
+  .link-section {
+    flex-direction: column-reverse;
+  }
+  .pages-links .page1 span {
+    display: flex;
+    padding-left: 0;
+    justify-content: start;
+    width: 100%;
+  }
+  .pages-links .page1 span {
+    padding-left: 5px;
+  }
+  .link-section .social-links {
+    border-top: none;
+  }
+  .link-section .social-links {
+    flex-direction: row;
+  }
+  .social-links a {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+  .social-links a i {
+    font-size: 24px;
+  }
+  .link-section .pages-links .page1 span i {
+    color: var(--text3);
+    font-size: 24px;
+  }
+  .link-section .pages-links .page1 span p{
+    font-size: 0.9rem;
+  }
+}
+
