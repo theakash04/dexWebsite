@@ -1,12 +1,11 @@
 .homePage{
-  width: 95%;
+  width: 98%;
   min-height: 100vh;
   background-color: var(--mainBackground);
   padding: 10px;
   margin-left: 7px;
   border-radius: 15px;
   padding: 64px 24px;
-  transition: all 0.15s ease-in-out;
 }
 .available{
  width: 100%; 

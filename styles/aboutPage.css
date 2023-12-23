@@ -4,10 +4,9 @@
   background-color: var(--mainBackground);
   padding: 10px;
   margin-left: 10px;
-  border-radius: 15px;
+  border-radius: 7px;
   padding: 64px 24px;
   display: none;
-  transition: all 0.15s ease-in-out;
 }
 .introduction{
   display: flex;
