@@ -1,10 +1,3 @@
-/* function changeColor() {
-  var w = window.outerWidth;
-  if(w<=600)
-  document.body.style */
-
-
-
 //top bar functions for menu
 let menubtn = document.querySelector(".menu");
 
