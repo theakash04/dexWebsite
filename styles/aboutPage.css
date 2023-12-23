@@ -1,0 +1,155 @@
+.aboutPage{
+  width: 98%;
+  min-height: 100vh;
+  background-color: var(--mainBackground);
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 64px 24px;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.introduction{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.introduction .texts{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.texts .name{
+  font-size: 2rem;
+  color: var(--text1);
+}
+.texts .profession{
+  font-size: 1.7rem;
+  padding-bottom: 40px;
+}
+.texts p{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text3);
+}
+
+.service-section, .skill-section, .experience-section, .eduction-section{
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.service-section h3, .skill-section h3, .experience-section h3, .eduction-section h3{
+  font-size: 1.7rem;
+  color: var(--text1);
+  padding-bottom: 20px;
+}
+.service-section .services{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 4px;
+}
+.services div{
+  font-size: 1rem;
+  color: var(--text1);
+  font-weight: 500;
+  padding: 20px;
+  background-color: var(--btn-hover);
+}
+
+
+.skill-section .skills{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 3px;
+}
+.skills div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--btn-hover);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text2);
+}
+.skills div i{
+  color: var(--text1);
+  font-size: 3rem;
+  padding-right: 30px;
+}
+
+.experience-section{
+  display:  none;
+}
+.graduation{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  border-bottom: 1px solid;
+}
+.graduation .year{
+  font-size: 1.3rem;
+  color: var(--text3);
+  font-weight: 600;
+}
+.graduation .clg-degree{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+.clg-degree p{
+  color: var(--text1);
+  font-weight: 500;
+}
+.clg-degree span{
+  font-weight: 500;
+}
+
+
+
+@media (min-width: 830px) {
+  .aboutPage{
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 120px;
+  }
+  .service-section .services{
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4px;
+    grid-column-gap: 4px;
+  }
+  .services .first{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+  }
+  .services .second{
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  .skill-section .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+  }
+  .graduation{
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .graduation .year{
+    padding-right: 30px;
+  }
+}
+
+
+@media (min-width: 1440px){
+  .aboutPage{
+    margin-left: 300px;
+  }
+}

@@ -17,7 +17,6 @@
   --text2: #a3a3a3;
   --text3: #7e7e7e;
   --btn-hover: #58585863;
-  color: #d5d5d563;
 }
 
 body{
@@ -30,6 +29,7 @@ body{
   font-family: 'Poppins', 'Roboto';
   flex-direction: column;
   overflow: auto;
+  overflow-x: hidden;
 }
  /* width */
  ::-webkit-scrollbar {
