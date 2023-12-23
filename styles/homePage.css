@@ -6,7 +6,7 @@
   margin-left: 7px;
   border-radius: 15px;
   padding: 64px 24px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .available{
  width: 100%; 

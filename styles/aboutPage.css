@@ -7,7 +7,7 @@
   border-radius: 15px;
   padding: 64px 24px;
   display: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .introduction{
   display: flex;
