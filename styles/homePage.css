@@ -161,30 +161,7 @@
 .project button:hover{
   background-color: #12c97123;
 }
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  column-gap: 10px;
-  border-top: 1px solid var(--btn-hover);
-  color: var(--text3);
-  font-size: 0.7rem;
-}
-footer span{
-  display: flex;
-  font-size: 1rem;
-  column-gap: 5px;
-  align-items: center;
-  font-weight: 500;
-  color: var(--text3);
-}
-footer span p{
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text1);
-}
+
 
 
 
