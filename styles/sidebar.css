@@ -80,6 +80,7 @@
 .pages-links .page1 {
   display: flex;
   width: 100%;
+text-decoration: none;
 }
 .page1 span {
   display: flex;
