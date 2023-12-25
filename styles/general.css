@@ -73,7 +73,17 @@ footer span p{
   font-weight: 600;
   color: var(--text1);
 }
-
+.copyright{
+  font-size: 1rem;
+  column-gap: 5px;
+  align-items: center;
+  font-weight: 500;
+  color: var(--text3);
+  transition: color 0.14s;
+}
+.copyright:hover{
+  color: #f6b08b;
+}
 
 
 @media (min-width: 830px) {
