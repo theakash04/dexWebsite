@@ -22,6 +22,7 @@ const darkTheme = () =>{
   document.documentElement.style.setProperty('--text3', '#7e7e7e')
   document.documentElement.style.setProperty('--btn-hover', '#58585863')
   setTheme("dark");
+  isDark = true;
 }
 
 const lightTheme = () =>{
@@ -35,11 +36,12 @@ const lightTheme = () =>{
   document.documentElement.style.setProperty('--text3', '#999999')
   document.documentElement.style.setProperty('--btn-hover', '#d5d5d563');
   setTheme("light");
+  isDark = false;
 }
 const themeChange = () =>{
   if(isDark === true){
     lightTheme();
-    isDark = false;  
+    isDark = false;
   }else{
     darkTheme();
     isDark = true;
@@ -56,8 +58,8 @@ const saveTheme = localStorage.getItem('theme');
 //checking if the user have saved theme or not and giving condition as per that..
 if(saveTheme){
   if(saveTheme === "dark"){
-    lightTheme();
-  }else{
     darkTheme();
+  }else{
+    lightTheme();
   }
 }
