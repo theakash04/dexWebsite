@@ -6,7 +6,10 @@ let themebtn = document.querySelector(".themeChanger");
 
 let isDark = true;
 
-
+//function to save the theme and store it in the local storage
+const setTheme = (theme) =>{
+  localStorage.setItem('theme', theme);
+};
 
 const darkTheme = () =>{
   themebtn.innerHTML = "<i class='bx bxs-moon'></i>";
@@ -18,6 +21,7 @@ const darkTheme = () =>{
   document.documentElement.style.setProperty('--text2', '#a3a3a3')
   document.documentElement.style.setProperty('--text3', '#7e7e7e')
   document.documentElement.style.setProperty('--btn-hover', '#58585863')
+  setTheme("dark");
 }
 
 const lightTheme = () =>{
@@ -30,7 +34,7 @@ const lightTheme = () =>{
   document.documentElement.style.setProperty('--text2', '#666666')
   document.documentElement.style.setProperty('--text3', '#999999')
   document.documentElement.style.setProperty('--btn-hover', '#d5d5d563');
-
+  setTheme("light");
 }
 const themeChange = () =>{
   if(isDark === true){
@@ -45,3 +49,15 @@ const themeChange = () =>{
 themebtn.addEventListener("click", () =>{
   themeChange();
 });
+
+//getting the user saved theme from local storage
+const saveTheme = localStorage.getItem('theme');
+
+//checking if the user have saved theme or not and giving condition as per that..
+if(saveTheme){
+  if(saveTheme === "dark"){
+    darkTheme();
+  }else{
+    lightTheme();
+  }
+}
