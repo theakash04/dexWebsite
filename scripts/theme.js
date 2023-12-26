@@ -56,8 +56,8 @@ const saveTheme = localStorage.getItem('theme');
 //checking if the user have saved theme or not and giving condition as per that..
 if(saveTheme){
   if(saveTheme === "dark"){
-    darkTheme();
-  }else{
     lightTheme();
+  }else{
+    darkTheme();
   }
 }
