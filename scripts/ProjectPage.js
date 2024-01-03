@@ -1,4 +1,4 @@
-const projects =  [
+const projects =  [//whenever upload a new project write on first ..
   {
     imgs: "../project-images/icons8-password-48.png",
     title: "Password Generator",
