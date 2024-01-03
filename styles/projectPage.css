@@ -1,0 +1,108 @@
+.projects-section{
+  width: 98%;
+  min-height: 100vh;
+  background-color: var(--mainBackground);
+  margin-left: 7px;
+  border-radius: 15px;
+  padding: 64px 24px;
+  display: grid;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.projects-section .page-title{
+  color: var(--text1);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.projects{
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 25px;
+}
+.project{
+  position: relative;
+  width: 100%;
+  height: max-content;
+  border-radius: 10px;
+  background-color: var(--background);
+  height: 300px;
+  border-bottom: 1px solid #12c971 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.project img{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.project .textBox{
+  text-align: center;
+}
+.project .textBox span{
+  font-size: 1.1rem;
+}
+.project .textBox p{
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns a button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #12c97115;
+  color: #12c971;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.project button:hover{
+  background-color: #12c97123;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 830px){
+  .projects-section{
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 120px;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .project{
+    padding: 15px 20px;
+  }
+}
+
+
+@media (min-width: 1440px){
+  .homePage{
+    margin-left: 300px;
+  }
+}

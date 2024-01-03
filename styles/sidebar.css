@@ -6,6 +6,7 @@
   flex-direction: column;
   display: flex;
   padding: 10px 10px;
+  z-index: 100;
 }
 .topbar {
   width: 100%;
