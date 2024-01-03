@@ -26,6 +26,7 @@
   width: 100%;
   height: max-content;
   border-radius: 10px;
+  padding: 0 25px;
   background-color: var(--background);
   height: 300px;
   border-bottom: 1px solid #12c971 ;
