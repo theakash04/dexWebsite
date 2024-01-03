@@ -1,5 +1,12 @@
 const projects =  [//whenever upload a new project write on first ..
   {
+    imgs: "../project-images/github.png",
+    title: "Git user finder",
+    description: "Discover Github users easily with Git User Finder a simple, responsive web app for exploration.",
+    link: "https://github.com/theakash04/Git-user-finder"
+  },
+
+  {
     imgs: "../project-images/icons8-password-48.png",
     title: "Password Generator",
     description: "Generate strong, secure passwords effortlessly with this user-friendly web app for enhanced online security.",
