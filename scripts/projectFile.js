@@ -1,5 +1,11 @@
 const projects =  [//whenever upload a new project write on first ..
   {
+    imgs: "../project-images/calculator.png",
+    title: "Calculator",
+    description: "Perform basic calculations effortlessly with this user-friendly web calculator. Simple interface, built with HTML, CSS, JS.",
+    link: "https://github.com/theakash04/Calculator.git"
+  },
+  {
     imgs: "../project-images/github.png",
     title: "Git user finder",
     description: "Discover Github users easily with Git User Finder a simple, responsive web app for exploration.",
